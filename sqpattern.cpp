@@ -1,4 +1,4 @@
-//same seq in each line square pattern-1
+//square pattern
 #include <iostream>
 using namespace std;
 int main() {
@@ -38,6 +38,15 @@ int main() {
         for(int j=0; j<n; j++){
             cout<<val;
             val++;
+        }
+        cout<<endl;
+    }
+
+    char ch='A';
+    for(int i=0; i<n; i++){
+        for(int j=0; j<n; j++){
+            cout<<ch;
+            ch++;
         }
         cout<<endl;
     }
