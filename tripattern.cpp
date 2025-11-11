@@ -78,7 +78,7 @@ int main() {
 
     for (int i = 0; i < n; i++) {
         char ch = 'A' + i;       // starting letter for this row
-        for (int j = 0; j <= i; j++) {
+        for (int j = 0; j <i+1; j++) {
             cout << ch;          // print current character
             ch--;                // move one character backward (e.g., D → C → B → A)
         }
