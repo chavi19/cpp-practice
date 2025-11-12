@@ -20,10 +20,10 @@ int main() {
             cout<<" ";
         }
         for(int j=0; j<n-i; j++) {
-            cout<<ch;
-            
+            cout<<ch;    
         }
         cout<<endl;
         ch++;
     }
 }
+//g++ invtriptn.cpp -o invtriptn.exe && invtriptn.exe

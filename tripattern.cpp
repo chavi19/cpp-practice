@@ -84,6 +84,6 @@ int main() {
         }
         cout << endl;
     }
-        
-    
+           
 }
+//g++ tripattern.cpp -o tripattern.exe && tripattern.exe

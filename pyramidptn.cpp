@@ -17,3 +17,4 @@ int main() {
         cout<<endl;
     }
 }
+//g++ pyramidptn.cpp -o pyramidptn.exe && pyramidptn.exe

@@ -27,7 +27,7 @@ int main() {
     for(int i=0; i<n; i++) {
         char ch='a';    //should be here just before j
         for(int j=0; j<n; j++) {
-            cout<<ch;
+            cout<<ch<<" ";
             ch++;
         }
         cout<<endl;
@@ -36,16 +36,17 @@ int main() {
     int val=1;      //if it was written jst before j, val would be reset to 1 everytime
     for(int i=0; i<n; i++){
         for(int j=0; j<n; j++){
-            cout<<val;
+            cout<<val<<" ";
             val++;
         }
         cout<<endl;
     }
+    cout<<endl;
 
     char ch='A';
     for(int i=0; i<n; i++){
         for(int j=0; j<n; j++){
-            cout<<ch;
+            cout<<ch<<" ";
             ch++;
         }
         cout<<endl;
@@ -53,3 +54,4 @@ int main() {
 
     return 0;
 }
+//g++ sqpattern.cpp -o sqpattern.exe && sqpattern.exe
