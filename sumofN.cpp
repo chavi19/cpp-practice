@@ -12,9 +12,10 @@ int main() {
     } */ 
 
     int sum=0;
-    for(int count=1; count<=N; count+=2) {     //or count++ for every no.  //if(count%2 != 0) {
-                                              
+    for(int count=1; count<=N; count+=2) {     //or count++ for every no.  //if(count%2 != 0) {                                      
         sum += count;
+
+    //for(initialisation; condition; updatation)
     }
 
     cout<<"Sum of odd numbers from 1 to "<<N<<" is: "<<sum<<endl;

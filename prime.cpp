@@ -17,7 +17,7 @@ int main() {
     bool isPrime = true;  //suppose n is prime initially
     for(int i=3; i*i<=n; i+=2){
 
-        if (n % i == 0){    //for non-prime
+        if (n % i == 0){    //for non-prime //15%5==0
             isPrime = false;
             break;          //once no. declared non-prime no need to check again
         }

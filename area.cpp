@@ -6,5 +6,5 @@ int main() {
     cin>>a;
     area = a*a;
     cout<<"Area is:"<<area;
-    return 0;
+    return 0; 
 }
