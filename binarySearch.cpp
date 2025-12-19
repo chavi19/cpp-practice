@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+//ITERATIVE METHOD: more optimised as of space complexity->O(log n) & O(1)
 int binarySearch(vector<int> arr, int target){ 
     int start=0, end = arr.size()-1;
     while(start <= end){
@@ -17,6 +18,26 @@ int binarySearch(vector<int> arr, int target){
     }
     return -1;
 }
+
+int recBS(vector<int> arr, int target, int start, int end){
+    if(start <= end){
+        int mid = start + (end-start)/2;
+
+        if(target > arr[mid]){
+            return recBS(arr, target, mid+1, end);
+        }
+        else if(target < arr[mid]){
+            return recBS(arr, target, start, mid-1);
+        }
+        else{
+            return mid;
+        }
+    }
+    return -1;
+    
+}
+
+//RECURSIVE BS: O(log n) & O(log n)
 int main(){
     vector<int> arr1 = {-1, 0, 3, 4, 5, 9, 12};    //odd
     int target1 = 12;
@@ -26,6 +47,7 @@ int main(){
 
     cout<<binarySearch(arr1, target1)<<endl;
     cout<<binarySearch(arr2, target2)<<endl;
+    cout<<recBS(arr2, target2, 0, arr2.size()-1)<<endl;
 
     return 0;
 
